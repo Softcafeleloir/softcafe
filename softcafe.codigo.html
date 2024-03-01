@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css"> <!-- archivo CSS del diseño -->
+</head>
+
+<body>
+    <header>
+        <img src="logo soft cafe.jfif" alt="Logo de Soft Cafe">
+        <h1 style="text-transform: uppercase;">Soft Cafe Leloir</h1>
+    </header>
+    <main>
+        <h2>Bienvenido al sitio oficial de Soft Cafe Leloir</h2>
+        <p>Gracias por visitarnos.</p>
+        <p>Puedes encontrar más información en nuestras redes:</p>
+        <p class="p1">Seguinos en instagram:<a href="https://www.instagram.com/softcafe.leloir/" target="_blank">@softcafe.leloir</a></p>
+        <p class="p1">Seguinos en facebook:<a href="https://m.facebook.com/softcafeleloir/" target="_blank">@softcafeleloir</a></p>
+        <br>
+        <div class="gallery">
+            <img src="imagen 1.jpg" alt="1">
+            <img src="imagen 2.jpg" alt="2">
+            <img src="imagen 3.jpg" alt="3">
+            <img src="imagen 4.jpg" alt="4">
+            <img src="imagen 5.jpg" alt="5">
+            <img src="imagen 6.jpeg" alt="6">
+            <!-- Agrega más imágenes aquí -->
+        </div>
+<!-- Contenedor del mapa --><br>
+<div id="map-container">
+    <!-- Texto superpuesto -->
+    <div class="map-text">
+        <p> Ir a Google Maps</p>
+        <!-- Imagen como hipervínculo a Google Maps -->
+        <a href="https://www.google.com/maps/place/Soft+Cafe/@-34.6182135,-58.7312249,13z/data=!4m14!1m7!3m6!1s0x95bcbf0ec5b94a79:0x7cb9d6b84e03bcae!2sSoft+Cafe!8m2!3d-34.627813!4d-58.6908601!16s%2Fg%2F11rcrtjf0y!3m5!1s0x95bcbf0ec5b94a79:0x7cb9d6b84e03bcae!8m2!3d-34.627813!4d-58.6908601!16s%2Fg%2F11rcrtjf0y?hl=es-419&entry=ttu" target="_blank">
+            <img src="mapa.png" alt="Ir a Google Maps">
+        </a>
+    </div>
+    <!-- Mapa -->
+    <div id="map"></div>
+</div>
+</main>
+
+<!-- Script JavaScript para el mapa -->
+<script>
+// Define aquí tu función initMap() si es necesario
+</script>
+<!-- Llama a la función de inicialización del mapa al cargar la página si es necesario -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap"></script>
+
+<!-- Archivo JavaScript para la funcionalidad de la galería -->
+<script src="gallery.js"></script>
+</body>
+</html
