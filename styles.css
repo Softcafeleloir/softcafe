@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente de letra */
+    background-color: #8d6102; /* Color de fondo */
+    color: #333; /* Color de texto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 200px; /* Tamaño del logo */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: beige;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(235, 219, 177);
+}
+
+.p1 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 800;
+}
+
+/* Color del enlace cuando está en estado normal */
+a:link {
+    color: white;
+}
+/* Color del enlace cuando está en estado hover (pasado por encima) */
+a:hover {
+    color: #004445; /* Color deseado al pasar el mouse */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+/* Estilo para el contenedor del mapa */
+#map-container {
+    position: relative;
+    height: 400px; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+    margin-top: 300px; /* Espacio superior */
+    margin-bottom: 50px; /* Ajusta el margen inferior para colocarlo más abajo */
+}
+
+/* Estilo para el mapa */
+#map {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    width: 90%; /* Ajusta el ancho según tus necesidades */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+}
+
+/* Estilo para el texto superpuesto */
+.map-text {
+    position: absolute;
+    bottom: 20px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    background-color:black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #004445;
+    cursor: pointer;
+}
+
+.map-text:hover {
+    background-color: #004445;
+    color: #fff;
+}
+
